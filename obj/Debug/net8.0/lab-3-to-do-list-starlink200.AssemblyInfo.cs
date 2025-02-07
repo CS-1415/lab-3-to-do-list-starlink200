@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lab-3-to-do-list-starlink200")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+663e5c3e8485c929e155bac3b60387770aeb5d92")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+072d391f3197bf697a85008200e066b415ceef3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("lab-3-to-do-list-starlink200")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lab-3-to-do-list-starlink200")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

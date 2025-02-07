@@ -31,18 +31,18 @@ public class Task
         }
         else
         {
-            Console.WriteLine($"[ ] {ID}  {Title}");
+            Console.WriteLine($"[ ] {ID}    {Title}");
         }
     }
 
     public void DisplayDescription()
     {
-        Console.WriteLine($"{Title} is {Description}");
+        Console.WriteLine($"    -{Description}");
     }
 
     public void MarkAsCompleted()
     {
-        Console.WriteLine($"[x] {ID}  {Title}");
+        Console.WriteLine($"[x] {ID}    {Title}");
     }
 
 }

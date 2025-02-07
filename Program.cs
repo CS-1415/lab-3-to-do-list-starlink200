@@ -20,23 +20,29 @@ internal class Program
             {
                 case "+":
                     Task userToDo = new Task();
-                    userToDo.ID = TaskList.Count();
+                    userToDo.ID = TaskList.Count() + 1;
                     userToDo.Description = addDescription();
                     userToDo.Title = setTitle();
+                    TaskList.Add(userToDo);
                     break;
                 case "i":
                     // userToDo.ID = whichTask() - 1;
                     // userToDo.Title = TaskList[userToDo.ID];
                     // userToDo.Description = TaskDescription[userToDo.ID];
                     // userToDo.DisplayDescription();
-                    TaskList[whichTask(TaskList.Count())-1].DisplayDescription();
+                    int whichOne = whichTask(TaskList.Count) - 1;
+                    TaskList[whichOne].DisplayTask();
+                    TaskList[whichOne].DisplayDescription();
+                    Console.WriteLine();
                     break;
                 case "x":
-                    whichTask(TaskList.Count());
+                    TaskList[whichTask(TaskList.Count()) - 1].isCompleted = true;
                     break;
                     
             }
-            foreach(var item in TaskList)
+            Console.WriteLine("    ID   Task");
+            Console.WriteLine("-----------------");
+            foreach(Task item in TaskList)
             {
                 item.DisplayTask();
             }
